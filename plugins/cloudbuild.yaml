@@ -1,14 +1,10 @@
-apiVersion: skaffold/v1alpha2
-kind: Plugin
-metadata:
-  name: cloudbuild
-spec:
-  platforms:
-  - os: linux
-    sha256: 4cf181eb79b1527c20ceff4dba072a8db897ef448e5b276e2d2d70b0a61e6282
-    uri: https://storage.googleapis.com/cloudbuild-builder/linux/cloudbuild
-  version: "master"
-  shortDescription: Use Google Cloud Builder as your skaffold builder.
-  caveats: |
-    This plugin needs the following programs:
-    * You must have a Google Cloud Platform project with GCB set up to use this feature, please visit https://cloud.google.com/cloud-build/ for more info.
+name: cloudbuild
+platforms:
+- os: linux
+  sha256: 4cf181eb79b1527c20ceff4dba072a8db897ef448e5b276e2d2d70b0a61e6282
+  uri: https://storage.googleapis.com/cloudbuild-builder/linux/cloudbuild
+version: "master"
+shortDescription: Use Google Cloud Builder as your skaffold builder.
+caveats: |
+  This plugin needs the following programs:
+  * You must have a Google Cloud Platform project with GCB set up to use this feature, please visit https://cloud.google.com/cloud-build/ for more info.
