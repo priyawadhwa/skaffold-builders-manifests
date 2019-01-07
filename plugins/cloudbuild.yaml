@@ -5,6 +5,10 @@ platforms:
   uri: https://storage.googleapis.com/cloudbuild-builder/linux/cloudbuild
 - os: darwin
   uri: https://storage.googleapis.com/cloudbuild-builder/darwin/cloudbuild
+flags:
+  - name: "projectID"
+    desc: "The project ID under which to run the GCB job."
+    required: true
 version: "master"
 shortDescription: Use Google Cloud Builder as your skaffold builder.
 caveats: |
